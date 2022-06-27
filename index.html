@@ -24,10 +24,30 @@
             <button id="login" class="btn btn-success">Enter</button>
         </div>
     </div>
+    <div id="transaction-area">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Deposit</h5>
+                <h2>$00</h2>
+            </div>
+            <div class="col-md-4">
+                <h5>Withdraw</h5>
+                <h2>$00</h2>
+            </div>
+            <div class="col-md-4">
+                <h5>Balance</h5>
+                <h2>$1240</h2>
+            </div>
+        </div>
+    </div>
     <script>
         const loginBtn = document.getElementById('login')
         loginBtn.addEventListener('click', () => {
-            console.log('Amade Click korce, uff batha paice')
+            const loginArea = document.getElementById('login-area')
+            loginArea.style.display = "none"
+            const transactionArea = document.getElementById('transaction-area')
+            transactionArea.style.display = "block"
+
         })
     </script>
 
